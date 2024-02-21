@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="css/STYLE.CSS">
+    <script defer src="js/scripts.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Assignment</h1>
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="#custom-color">Change Custom Color</a></li>
+                <li><a href="#random-color">Change Random Color</a></li>
+                <li><a href="#image-select">Select Image</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Section for Custom Color Change -->
+        <section id="custom-color">
+            <h2>Change Custom Color</h2>
+            <!-- Input for Custom Color -->
+            <label for="color-input">Enter a number between 0 and 100:</label>
+            <input type="number" id="color-input" min="0" max="100" step="1">
+            <!-- Button to Trigger Custom Color Change -->
+            <button id="change-custom-color">Change Color</button>
+        </section>
+
+        <!-- Section for Random Color Change -->
+        <section id="random-color">
+            <h2>Change Random Color</h2>
+            <!-- Button to Trigger Random Color Change -->
+            <button id="change-random-color">Change Color</button>
+        </section>
+
+        <!-- Section for Image Selection -->
+        <section id="image-select">
+            <h2>Select Image</h2>
+            <!-- Dropdown for Image Selection -->
+            <label for="image-select-dropdown">Choose an image:</label>
+            <select id="image-select-dropdown">
+                <option value="img/img1.jpg ">Image 1</option>
+                <option value="img/img2.jpg">Image 2</option>
+                <option value="img/img3.jpg">Image 3</option>
+            </select>
+            <!-- Container to Display Selected Image -->
+            <div id="image-container">
+                <img id="display-image" src="img/img4.jpg" alt="Displayed Image">
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Assignment</p>
+    </footer>
+</body>
+</html>
